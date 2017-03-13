@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { AppRegistry, StyleSheet, Text, View } from 'react-native';
 import * as firebase from 'firebase';
 
+
 export default class RetailSite extends Component {
   render() {
     return (
