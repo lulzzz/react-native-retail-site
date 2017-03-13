@@ -1,0 +1,31 @@
+dependencies: \
+  /Users/michaelcwalsh/Desktop/react-native-retail-site/node_modules/react-native/React/Base/RCTBatchedBridge.m \
+  /Users/michaelcwalsh/Desktop/react-native-retail-site/node_modules/react-native/React/Base/RCTAssert.h \
+  /Users/michaelcwalsh/Desktop/react-native-retail-site/node_modules/react-native/React/Base/RCTDefines.h \
+  /Users/michaelcwalsh/Desktop/react-native-retail-site/node_modules/react-native/React/Base/RCTBridge+Private.h \
+  /Users/michaelcwalsh/Desktop/react-native-retail-site/node_modules/react-native/React/Base/RCTBridge.h \
+  /Users/michaelcwalsh/Desktop/react-native-retail-site/node_modules/react-native/React/Base/RCTBridgeDelegate.h \
+  /Users/michaelcwalsh/Desktop/react-native-retail-site/node_modules/react-native/React/Base/RCTJavaScriptLoader.h \
+  /Users/michaelcwalsh/Desktop/react-native-retail-site/node_modules/react-native/React/Base/RCTBridgeModule.h \
+  /Users/michaelcwalsh/Desktop/react-native-retail-site/node_modules/react-native/React/Base/RCTFrameUpdate.h \
+  /Users/michaelcwalsh/Desktop/react-native-retail-site/node_modules/react-native/React/Base/RCTInvalidating.h \
+  /Users/michaelcwalsh/Desktop/react-native-retail-site/node_modules/react-native/React/Base/RCTBridgeMethod.h \
+  /Users/michaelcwalsh/Desktop/react-native-retail-site/node_modules/react-native/React/Base/RCTConvert.h \
+  /Users/michaelcwalsh/Desktop/react-native-retail-site/ios/build/Build/Products/Debug-iphonesimulator/include/yoga/Yoga.h \
+  /Users/michaelcwalsh/Desktop/react-native-retail-site/ios/build/Build/Products/Debug-iphonesimulator/include/yoga/YGEnums.h \
+  /Users/michaelcwalsh/Desktop/react-native-retail-site/ios/build/Build/Products/Debug-iphonesimulator/include/yoga/YGMacros.h \
+  /Users/michaelcwalsh/Desktop/react-native-retail-site/node_modules/react-native/React/Views/RCTAnimationType.h \
+  /Users/michaelcwalsh/Desktop/react-native-retail-site/node_modules/react-native/React/Views/RCTBorderStyle.h \
+  /Users/michaelcwalsh/Desktop/react-native-retail-site/node_modules/react-native/React/Base/RCTLog.h \
+  /Users/michaelcwalsh/Desktop/react-native-retail-site/node_modules/react-native/React/Views/RCTPointerEvents.h \
+  /Users/michaelcwalsh/Desktop/react-native-retail-site/node_modules/react-native/React/Views/RCTTextDecorationLineType.h \
+  /Users/michaelcwalsh/Desktop/react-native-retail-site/node_modules/react-native/React/Modules/RCTDevLoadingView.h \
+  /Users/michaelcwalsh/Desktop/react-native-retail-site/node_modules/react-native/React/Base/RCTDisplayLink.h \
+  /Users/michaelcwalsh/Desktop/react-native-retail-site/node_modules/react-native/React/Executors/RCTJSCExecutor.h \
+  /Users/michaelcwalsh/Desktop/react-native-retail-site/node_modules/react-native/React/Base/RCTJavaScriptExecutor.h \
+  /Users/michaelcwalsh/Desktop/react-native-retail-site/node_modules/react-native/React/Base/RCTModuleData.h \
+  /Users/michaelcwalsh/Desktop/react-native-retail-site/node_modules/react-native/React/Base/RCTPerformanceLogger.h \
+  /Users/michaelcwalsh/Desktop/react-native-retail-site/node_modules/react-native/React/Profiler/RCTProfile.h \
+  /Users/michaelcwalsh/Desktop/react-native-retail-site/node_modules/react-native/React/Modules/RCTRedBox.h \
+  /Users/michaelcwalsh/Desktop/react-native-retail-site/node_modules/react-native/React/Base/RCTErrorCustomizer.h \
+  /Users/michaelcwalsh/Desktop/react-native-retail-site/node_modules/react-native/React/Base/RCTUtils.h
