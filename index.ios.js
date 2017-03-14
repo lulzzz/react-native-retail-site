@@ -1,23 +1,35 @@
 import React, { Component } from 'react';
-import { AppRegistry, StyleSheet, Text, View } from 'react-native';
+import { AppRegistry, Text } from 'react-native';
+import { Container, Header, Title, Content, Footer, FooterTab, Button, Left, Right, Body, Icon } from 'native-base';
 import * as firebase from 'firebase';
 
 
 class RetailSite extends Component {
   render() {
     return (
-      <View>
-        <Text>
-          Welcome to React Native!
-        </Text>
-        <Text>
-          To get started, edit index.ios.js
-        </Text>
-        <Text>
-          Press Cmd+R to reload,{'\n'}
-          Cmd+D or shake for dev menu
-        </Text>
-      </View>
+      <Container>
+        <Header>
+            <Left>
+                <Button transparent>
+                </Button>
+            </Left>
+            <Body>
+                <Title>RetailSite</Title>
+            </Body>
+            <Right />
+        </Header>
+
+        <Content>
+        </Content>
+
+        <Footer>
+            <FooterTab>
+                <Button full>
+                    <Text>Footer</Text>
+                </Button>
+            </FooterTab>
+        </Footer>
+      </Container>
     );
   }
 }
