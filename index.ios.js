@@ -3,17 +3,17 @@ import { AppRegistry, StyleSheet, Text, View } from 'react-native';
 import * as firebase from 'firebase';
 
 
-export default class RetailSite extends Component {
+class RetailSite extends Component {
   render() {
     return (
-      <View style={styles.container}>
-        <Text style={styles.welcome}>
+      <View>
+        <Text>
           Welcome to React Native!
         </Text>
-        <Text style={styles.instructions}>
+        <Text>
           To get started, edit index.ios.js
         </Text>
-        <Text style={styles.instructions}>
+        <Text>
           Press Cmd+R to reload,{'\n'}
           Cmd+D or shake for dev menu
         </Text>
@@ -22,23 +22,6 @@ export default class RetailSite extends Component {
   }
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-    backgroundColor: '#F5FCFF',
-  },
-  welcome: {
-    fontSize: 20,
-    textAlign: 'center',
-    margin: 10,
-  },
-  instructions: {
-    textAlign: 'center',
-    color: '#333333',
-    marginBottom: 5,
-  },
-});
-
 AppRegistry.registerComponent('RetailSite', () => RetailSite);
+
+export default RetailSite;
