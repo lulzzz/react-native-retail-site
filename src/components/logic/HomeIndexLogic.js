@@ -11,32 +11,26 @@ class HomeIndexLogic extends Component {
 
   componentDidMount() {
     let _this = this;
-    let slaughterhouses = {};
+    let products = {};
 
-    PPCDashData.ref('users/').once('value', function(allData) {
-      allData.forEach(function(data) {
-        data.forEach(function(userNode) {
-          if (userNode.val().type === 'slaughterhouse') {
-            if (userNode.val().deletedAt !== true) {
-              let companyName = userNode.val().companyName;
-              let sifNumber = userNode.val().sif;
-              let idNumber = data.key;
-              slaughterhouses[companyName] = {name: companyName, sif: sifNumber, id: idNumber}
-            }
-          }
-        })
+    RNRSData.ref('products/').once('value', function(data) {
+      data.forEach(function(userNode) {
+        let name = userNode.val().name;
+        let cost = userNode.val().cost;
+        let idNumber = data.key;
+        products[name] = {name: name, cost: cost, id: idNumber}
       })
     }).then(function(user) {
-      let keys = Object.keys(slaughterhouses).sort();
+      let keys = Object.keys(products).sort();
       let sortedHash = {};
       let sortedArray = [];
 
       for (let i = 0; i < keys.length; i++) {
         let key = keys[i];
-        sortedArray.push(sortedHash[key] = slaughterhouses[key]);
+        sortedArray.push(sortedHash[key] = products[key]);
       }
 
-      _this.setState({allSlaughters: sortedArray}, function afterSlaughterSet() {
+      _this.setState({allProducts: sortedArray}, function afterProductSet() {
 
       });
     })
