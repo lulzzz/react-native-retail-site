@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Text } from 'react-native';
 import { Container, Header, Title, Content, Footer, FooterTab, Button, Left, Right, Body, Icon } from 'native-base';
+import HomeIndexLogic from '../logic/HomeIndexLogic';
 
 class MainLayout extends Component {
   render() {
@@ -18,6 +19,7 @@ class MainLayout extends Component {
         </Header>
 
         <Content>
+          <HomeIndexLogic />
         </Content>
 
         <Footer>
