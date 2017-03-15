@@ -1,10 +1,10 @@
 import firebase from 'firebase';
 
 let RNRSConfig = {
-  apiKey: "AIzaSyD6SKOtZgLk57gx4XyXpDGpKiXk4fTrdnU",
-  authDomain: "react-native-retail-site.firebaseapp.com",
-  databaseURL: "https://react-native-retail-site.firebaseio.com",
-  storageBucket: "react-native-retail-site.appspot.com"
+  apiKey: "AIzaSyDiUscQiOZWMPBaFXfOylHP4JuqK68YfP0",
+  authDomain: "react-native-retail-site-883bc.firebaseapp.com",
+  databaseURL: "https://react-native-retail-site-883bc.firebaseio.com",
+  storageBucket: "react-native-retail-site-883bc.appspot.com"
 };
 
 let RNRS = firebase.initializeApp(RNRSConfig);
