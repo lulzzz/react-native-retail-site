@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { RNRSData } from '../../config/FirebaseConstants';
+import HomeIndex from '../pages/HomeIndex';
 
 class HomeIndexLogic extends Component {
   constructor(props){
