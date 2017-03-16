@@ -18,7 +18,7 @@ class HomeIndexLogic extends Component {
       data.forEach(function(productNode) {
         let name = productNode.val().name;
         let cost = productNode.val().cost;
-        let idNumber = data.key;
+        let idNumber = productNode.key;
         products[name] = {name: name, cost: cost, id: idNumber}
       })
     }).then(function(product) {
