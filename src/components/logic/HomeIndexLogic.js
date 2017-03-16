@@ -11,6 +11,7 @@ class HomeIndexLogic extends Component {
   }
 
   componentDidMount() {
+    let _this = this;
     let products = {};
 
     RNRSData.ref('products/').once('value', function(data) {
@@ -31,7 +32,7 @@ class HomeIndexLogic extends Component {
         sortedArray.push(sortedHash[key] = products[key]);
       }
 
-      this.setState({allProducts: sortedArray}, function afterProductSet() {
+      _this.setState({allProducts: sortedArray}, function afterProductSet() {
 
       });
     })

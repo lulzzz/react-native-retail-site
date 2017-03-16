@@ -1,11 +1,11 @@
 import React  from 'react';
-import { View } from 'react-native';
+import { View, Text } from 'react-native';
 
 const HomeIteration = props => {
 
   return (
     <View key={props.id}>
-      {props.name}
+      <Text>{props.name}</Text>
     </View>
   )
 }
