@@ -11,17 +11,17 @@ class HomeIndexLogic extends Component {
   }
 
   componentDidMount() {
-    let _this = this;
     let products = {};
 
     RNRSData.ref('products/').once('value', function(data) {
-      data.forEach(function(userNode) {
-        let name = userNode.val().name;
-        let cost = userNode.val().cost;
+      data.forEach(function(productNode) {
+        let name = productNode.val().name;
+        let cost = productNode.val().cost;
         let idNumber = data.key;
         products[name] = {name: name, cost: cost, id: idNumber}
       })
-    }).then(function(user) {
+    }).then(function(product) {
+      console.log(product)
       let keys = Object.keys(products).sort();
       let sortedHash = {};
       let sortedArray = [];
@@ -31,7 +31,7 @@ class HomeIndexLogic extends Component {
         sortedArray.push(sortedHash[key] = products[key]);
       }
 
-      _this.setState({allProducts: sortedArray}, function afterProductSet() {
+      this.setState({allProducts: sortedArray}, function afterProductSet() {
 
       });
     })
@@ -39,6 +39,7 @@ class HomeIndexLogic extends Component {
 
   render() {
     let allProducts = this.state.allProducts;
+    console.log(allProducts);
 
     return (
       <HomeIndex
