@@ -21,7 +21,7 @@ const HomeIndex = props => {
               />
             )
           })}
-        </View>
+      </View>
     </View>
   )
 }
