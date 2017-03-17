@@ -1,13 +1,15 @@
 import React  from 'react';
-import { StyleSheet, View, Text } from 'react-native';
+import { StyleSheet, View, Image, Text } from 'react-native';
 import styles from '../../../styles.js';
 
 const HomeIteration = props => {
 
   return (
-    <View key={props.id} style={styles.liContainer}>
-      <Text style={styles.liText}>{props.name}</Text>
-      <Text>${props.cost}</Text>
+    <View style={styles.liContainer}>
+        <Image source={{uri: props.image}} style={styles.liImage}>
+        <Text style={styles.liTextName}>{props.name}</Text>
+        <Text style={styles.liTextCost}>${props.cost}</Text>
+        </Image>
     </View>
   )
 }

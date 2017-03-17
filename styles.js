@@ -2,14 +2,19 @@ import React from 'react';
 import { StyleSheet } from 'react-native';
 
 const styles = StyleSheet.create({
-  liContainer: {
-    flex: 3,
-    backgroundColor: 'blue',
+  homeIndexContainer: {
+    flex: 1,
   },
-  liText: {
-    color: 'white',
+  liContainer: {
+    flex: 1,
+    justifyContent: 'center',
+    height: null,
+    width: null,
+  },
+  liTextName: {
     fontSize: 24,
     fontWeight: 'bold',
+    fontFamily: 'Bebas Neue',
   },
 });
 

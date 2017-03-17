@@ -18,8 +18,9 @@ class HomeIndexLogic extends Component {
       data.forEach(function(productNode) {
         let name = productNode.val().name;
         let cost = productNode.val().cost;
+        let image = productNode.val().image;
         let idNumber = productNode.key;
-        products[name] = {name: name, cost: cost, id: idNumber}
+        products[name] = {name: name, cost: cost, image: image, id: idNumber}
       })
     }).then(function(product) {
       console.log(product)
