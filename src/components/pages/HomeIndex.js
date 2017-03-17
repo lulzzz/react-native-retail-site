@@ -1,13 +1,15 @@
 import React  from 'react';
-import { Text, View } from 'react-native';
+import { StyleSheet, Text, View } from 'react-native';
 import HomeIteration from './HomeIteration';
+import styles from '../../../styles.js';
 
 const HomeIndex = props => {
   let allProducts = props.allProducts;
 
   return (
     <View>
-      <Text>New Arrivals</Text>
+      <Text style={styles.homeHeader}>New Arrivals</Text>
+      <View style={styles.homeIndexContainer}>
           {allProducts.map(function(object) {
             return (
               <HomeIteration
@@ -15,9 +17,11 @@ const HomeIndex = props => {
                 id={object.id}
                 name={object.name}
                 cost={object.cost}
+                image={object.image}
               />
             )
           })}
+      </View>
     </View>
   )
 }
