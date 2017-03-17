@@ -1,11 +1,12 @@
 import React  from 'react';
-import { View, Text } from 'react-native';
+import { StyleSheet, View, Text } from 'react-native';
+import styles from '../../../styles.js';
 
 const HomeIteration = props => {
 
   return (
-    <View key={props.id}>
-      <Text>{props.name}</Text>
+    <View key={props.id} style={styles.liContainer}>
+      <Text style={styles.liText}>{props.name}</Text>
       <Text>${props.cost}</Text>
     </View>
   )
