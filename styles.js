@@ -2,6 +2,11 @@ import React from 'react';
 import { StyleSheet } from 'react-native';
 
 const styles = StyleSheet.create({
+  homeHeader: {
+    fontSize: 18,
+    fontWeight: 'bold',
+    textAlign: 'center',
+  },
   homeIndexContainer: {
     flex: 1,
   },

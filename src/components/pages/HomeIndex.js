@@ -8,7 +8,7 @@ const HomeIndex = props => {
 
   return (
     <View>
-      <Text>New Arrivals</Text>
+      <Text style={styles.homeHeader}>New Arrivals</Text>
       <View style={styles.homeIndexContainer}>
           {allProducts.map(function(object) {
             return (
