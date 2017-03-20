@@ -11,10 +11,13 @@ const styles = StyleSheet.create({
     flex: 1,
   },
   liContainer: {
-    flex: 1,
+    flex: 2,
     justifyContent: 'center',
     height: null,
     width: null,
+  },
+  liImage: {
+    height: 120,
   },
   liTextName: {
     fontSize: 24,
