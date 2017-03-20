@@ -1,5 +1,5 @@
 import React  from 'react';
-import { StyleSheet, View, Image, Text } from 'react-native';
+import { StyleSheet, View, Image, Text, Navigator, TouchableHighlight } from 'react-native';
 import styles from '../../../styles.js';
 
 const HomeIteration = props => {
