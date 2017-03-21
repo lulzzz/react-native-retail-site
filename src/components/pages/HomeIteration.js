@@ -5,8 +5,6 @@ import styles from '../../../styles.js';
 class HomeIteration extends Component {
   constructor(props){
     super(props);
-    this.state = {
-    }
   }
 
   render() {

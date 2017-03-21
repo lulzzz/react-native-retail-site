@@ -1,30 +1,31 @@
 import React, { Component } from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, Text, View, TouchableHighlight, Image } from 'react-native';
 import HomeIteration from './HomeIteration';
 import styles from '../../../styles.js';
 
 class HomeIndex extends Component {
   constructor(props){
     super(props);
-    this.state = {
-    }
   }
 
 
   render () {
+    let allProducts = this.props.allProducts;
+
     return (
       <View>
         <Text style={styles.homeHeader}>New Arrivals</Text>
         <View style={styles.homeIndexContainer}>
-            {this.props.allProducts.map(function(props) {
+            {allProducts.map(function(object) {
               return (
-                <HomeIteration
-                  key={props.id}
-                  id={props.id}
-                  name={props.name}
-                  cost={props.cost}
-                  image={props.image}
-                />
+                <TouchableHighlight onPress={this._onPressButton}>
+                  <View style={styles.liContainer}>
+                      <Image source={{uri: object.image}} style={styles.liImage}>
+                      <Text style={styles.liTextName}>{object.name}</Text>
+                      <Text style={styles.liTextCost}>${object.cost}</Text>
+                      </Image>
+                  </View>
+                </TouchableHighlight>
               )
             })}
         </View>
