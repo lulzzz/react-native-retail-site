@@ -6,6 +6,7 @@ import styles from '../../../styles.js';
 class ShowPage extends Component {
   render() {
     return (
+      <Text>Show Page</Text>
     );
   }
 }

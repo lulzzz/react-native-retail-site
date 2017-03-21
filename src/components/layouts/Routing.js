@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Navigator } from 'react-native';
 import HomeIndex from '../pages/HomeIndex';
+import ShowPage from '../pages/ShowPage';
 
 class Routing extends Component {
   constructor(){
@@ -11,6 +12,11 @@ class Routing extends Component {
   renderScene(route, navigator){
     if(route.name === 'home'){
       return <HomeIndex
+        navigator={navigator}
+      />
+    } else if (route.name === 'show') {
+      return <ShowPage
+        navigator={navigator}
       />
     }
   }
