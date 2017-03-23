@@ -19,9 +19,7 @@ class MainLayout extends Component {
             <Right />
         </Header>
 
-        <Content>
-          <Routing />
-        </Content>
+        <Routing />
 
         <Footer>
             <FooterTab>
