@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import { RNRSData } from '../../config/FirebaseConstants';
-import { StyleSheet, Text, View, TouchableHighlight, Image } from 'react-native';
-import HomeIteration from './HomeIteration';
+import { StyleSheet, Text, View, TouchableHighlight, Image, Navigator } from 'react-native';
 import styles from '../../../styles.js';
 
 class HomeIndex extends Component {
@@ -12,7 +11,7 @@ class HomeIndex extends Component {
     }
   }
 
-  componentDidMount() {
+  componentWillMount() {
     let _this = this;
     let products = {};
 
@@ -25,7 +24,6 @@ class HomeIndex extends Component {
         products[name] = {name: name, cost: cost, image: image, id: idNumber}
       })
     }).then(function(product) {
-      console.log(product)
       let keys = Object.keys(products).sort();
       let sortedHash = {};
       let sortedArray = [];
@@ -40,6 +38,7 @@ class HomeIndex extends Component {
       });
     })
   }
+
 
   render () {
     let allProducts = this.state.allProducts;

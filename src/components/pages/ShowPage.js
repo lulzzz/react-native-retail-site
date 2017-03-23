@@ -5,8 +5,11 @@ import styles from '../../../styles.js';
 
 class ShowPage extends Component {
   render() {
+    console.log("HI")
     return (
-      <Text>Show Page</Text>
+      <View>
+        <Text>Show Page</Text>
+      </View>
     );
   }
 }

@@ -7,11 +7,14 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
     textAlign: 'center',
   },
-  homeIndexContainer: {
+  testBorder: {
+    borderWidth: 1,
+    borderColor: 'red',
     flex: 1,
   },
+  homeIndexContainer: {
+  },
   liContainer: {
-    flex: 2,
     justifyContent: 'center',
     height: null,
     width: null,
