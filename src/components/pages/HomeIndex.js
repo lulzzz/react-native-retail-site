@@ -39,6 +39,12 @@ class HomeIndex extends Component {
     })
   }
 
+  _navigate(){
+    this.props.navigator.push({
+      name: 'show',
+    })
+  }
+
 
   render () {
     let allProducts = this.state.allProducts;
@@ -50,12 +56,14 @@ class HomeIndex extends Component {
         <View style={styles.homeIndexContainer}>
             {allProducts.map(function(object) {
               return (
-                <View style={styles.liContainer} key={object.id}>
+                <TouchableHighlight onPress={this._navigate} key={object.id}>
+                <View style={styles.liContainer}>
                     <Image source={{uri: object.image}} style={styles.liImage}>
                     <Text style={styles.liTextName}>{object.name}</Text>
                     <Text style={styles.liTextCost}>${object.cost}</Text>
                     </Image>
                 </View>
+                </TouchableHighlight>
               )
             })}
         </View>
