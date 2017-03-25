@@ -41,7 +41,7 @@ class HomeIndexLogic extends Component {
 
   render() {
     let allProducts = this.state.allProducts;
-    console.log(allProducts);
+    console.log("hi");
 
     return (
       <HomeIndex

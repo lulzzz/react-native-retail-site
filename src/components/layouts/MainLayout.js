@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import { Text } from 'react-native';
 import { Container, Header, Title, Content, Footer, FooterTab, Button, Left, Right, Body, Icon } from 'native-base';
-import HomeIndexLogic from '../logic/HomeIndexLogic';
+import Routing from './Routing';
+import HomeIndex from '../pages/HomeIndex';
 
 class MainLayout extends Component {
   render() {
@@ -18,9 +19,7 @@ class MainLayout extends Component {
             <Right />
         </Header>
 
-        <Content>
-          <HomeIndexLogic />
-        </Content>
+        <Routing />
 
         <Footer>
             <FooterTab>
