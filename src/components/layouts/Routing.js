@@ -10,7 +10,8 @@ class Routing extends Component {
       return(
         <HomeIndex navigator={navigator} />
       )
-    } else if (route.name === 'show') {
+    }
+    if (route.name === 'show') {
       return(
         <ShowPage navigator={navigator} />
       )

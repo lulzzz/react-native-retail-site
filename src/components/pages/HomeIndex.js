@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { RNRSData } from '../../config/FirebaseConstants';
 import { StyleSheet, Text, View, TouchableHighlight, Image, Navigator } from 'react-native';
+import ShowPage from './ShowPage';
 import styles from '../../../styles.js';
 
 class HomeIndex extends Component {
@@ -8,7 +9,8 @@ class HomeIndex extends Component {
     super(props);
     this.state = {
       allProducts: [],
-    }
+    };
+    this.navigate = this.navigate.bind(this);
   }
 
   componentWillMount() {
@@ -39,16 +41,18 @@ class HomeIndex extends Component {
     })
   }
 
-  _navigate(){
+  navigate(routeName){
+    console.log("HI");
     this.props.navigator.push({
-      name: 'show',
+      name: routeName,
     })
   }
 
 
   render () {
     let allProducts = this.state.allProducts;
-    console.log(allProducts);
+    let _this = this;
+    console.log(this.props);
 
     return (
       <View>
@@ -56,8 +60,8 @@ class HomeIndex extends Component {
         <View style={styles.homeIndexContainer}>
             {allProducts.map(function(object) {
               return (
-                <TouchableHighlight onPress={this._navigate} key={object.id}>
-                <View style={styles.liContainer}>
+                <TouchableHighlight onPress={ () => _this.navigate('show') } key={object.id}>
+                <View style={styles.liContainer} key={object.id}>
                     <Image source={{uri: object.image}} style={styles.liImage}>
                     <Text style={styles.liTextName}>{object.name}</Text>
                     <Text style={styles.liTextCost}>${object.cost}</Text>
