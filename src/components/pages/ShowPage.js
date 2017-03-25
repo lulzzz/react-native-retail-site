@@ -8,7 +8,7 @@ class ShowPage extends Component {
     console.log("HI")
     return (
       <View>
-        <Text>Pants</Text>
+        <Text>Show Page</Text>
       </View>
     );
   }
