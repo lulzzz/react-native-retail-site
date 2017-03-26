@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import { RNRSData } from '../../config/FirebaseConstants';
 import { StyleSheet, Text, View, TouchableHighlight, Image, Navigator } from 'react-native';
-import ShowPage from './ShowPage';
 import styles from '../../../styles.js';
 
 class HomeIndex extends Component {
