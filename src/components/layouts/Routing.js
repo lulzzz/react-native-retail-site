@@ -13,7 +13,7 @@ class Routing extends Component {
     }
     if (route.name === 'show') {
       return(
-        <ShowPage navigator={navigator} />
+        <ShowPage navigator={navigator} {...route.passProps} />
       )
     }
   }
