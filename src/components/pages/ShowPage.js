@@ -18,7 +18,10 @@ class ShowPage extends Component {
     console.log(this.props);
     return (
       <View>
-        <Image source={{uri: this.state.image}}></Image>
+        <Image
+          source={{uri: this.state.image}}
+          style={{width: 50, height: 50}}
+        />
         <Text>{this.state.name} - ${this.state.cost}</Text>
       </View>
     );
