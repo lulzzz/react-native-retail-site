@@ -14,8 +14,14 @@ class ShowPage extends Component {
     }
   }
 
+  navigate(routeName){
+    this.props.navigator.pop({
+      name: routeName
+    })
+  }
+
   render() {
-    console.log(this.props);
+    let _this = this;
     return (
       <View>
         <Image
@@ -23,6 +29,9 @@ class ShowPage extends Component {
           style={{width: 50, height: 50}}
         />
         <Text>{this.state.name} - ${this.state.cost}</Text>
+        <TouchableHighlight onPress={ () => _this.navigate('home') }>
+          <Text>Back</Text>
+        </TouchableHighlight>
       </View>
     );
   }
