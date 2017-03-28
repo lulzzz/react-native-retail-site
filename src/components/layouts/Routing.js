@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Navigator, View, StyleSheet } from 'react-native';
+import { Navigator } from 'react-native';
 import HomeIndex from '../pages/HomeIndex';
 import ShowPage from '../pages/ShowPage';
 
@@ -13,7 +13,7 @@ class Routing extends Component {
     }
     if (route.name === 'show') {
       return(
-        <ShowPage navigator={navigator} />
+        <ShowPage navigator={navigator} {...route.passProps} />
       )
     }
   }
