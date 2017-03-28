@@ -7,7 +7,10 @@ class ShowPage extends Component {
   constructor(props){
     super(props);
     this.state = {
-      id: this.props.id
+      id: this.props.id,
+      name: this.props.name,
+      cost: this.props.cost,
+      image: this.props.image
     }
   }
 
@@ -15,7 +18,8 @@ class ShowPage extends Component {
     console.log(this.props);
     return (
       <View>
-        <Text>{this.state.id}</Text>
+        <Image source={{uri: this.state.image}}></Image>
+        <Text>{this.state.name} - ${this.state.cost}</Text>
       </View>
     );
   }

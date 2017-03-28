@@ -40,11 +40,14 @@ class HomeIndex extends Component {
     })
   }
 
-  navigate(routeName, id){
+  navigate(routeName, object){
     this.props.navigator.push({
       name: routeName,
       passProps: {
-        id: id
+        id: object.id,
+        name: object.name,
+        cost: object.cost,
+        image: object.image
       },
     })
   }
@@ -60,7 +63,7 @@ class HomeIndex extends Component {
         <View style={styles.homeIndexContainer}>
             {allProducts.map(function(object) {
               return (
-                <TouchableHighlight onPress={ () => _this.navigate('show', object.id) } key={object.id}>
+                <TouchableHighlight onPress={ () => _this.navigate('show', object) } key={object.id}>
                 <View style={styles.liContainer}>
                     <Image source={{uri: object.image}} style={styles.liImage}>
                     <Text style={styles.liTextName}>{object.name}</Text>
